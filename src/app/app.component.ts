@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { HomePageComponent } from './home-page/home-page.component';
+import { CommonModule } from '@angular/common';
+
+
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true, 
+  imports: [CommonModule, HomePageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'starWars-Apis-Angular-sprint-7';
+  title = 'starWars-Apis';
 }

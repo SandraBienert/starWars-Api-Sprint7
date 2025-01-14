@@ -1,0 +1,15 @@
+
+<div class="container-fluid">
+  <div class="row d-flex flex-column justify-content-center align-items-center">
+    <div class="col" *ngFor="let starship of starships">
+      <div class="card" >
+        <div class="card-body">
+          <h5 class="card-title">{{ starship.name }}</h5>
+          <p class="card-text">{{ starship.model }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
