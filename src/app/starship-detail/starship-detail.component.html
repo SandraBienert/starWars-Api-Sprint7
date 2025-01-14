@@ -1,6 +1,26 @@
-<div *ngIf="starship">
-  <h1>{{ starship.name }}</h1>
-  <p><strong>Model:</strong> {{ starship.model }}</p>
-  <!-- Agrega altres detalls aquí -->
-</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Starship Detail</h2>
+      <div *ngIf="starship">
+        <h3>{{ starship.name }}</h3>
+        <p><strong>Model:</strong> {{ starship.model }}</p>
+        <p><strong>Model:</strong> {{ starship.model }}</p>
+        <p><strong>Model:</strong> {{ starship.model }}</p>
+        <p><strong>Model:</strong> {{ starship.model }}</p>
+        <p><strong>Model:</strong> {{ starship.model }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <button class="btn btn-primary" (click)="goBack()">Back</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <app-starship-detail [starship]="starship"></app-starship-detail>
+    </div>
+  </div>
+
 

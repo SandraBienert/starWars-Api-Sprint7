@@ -1,3 +1,27 @@
 
+.container-fluid {  
+  background-color: #000;  
+  color: #fff;  
+  font-family: 'Star Jedi', cursive; // Substitueix per la font que escullis!  
+   
+} 
 
- 
+.card{
+  background-color: #000;  
+  color: #fff;  
+  font-family: 'Star Jedi', cursive;
+  border: #fff 1px solid; 
+}
+
+button {  
+  background-color: #ffcc00;  
+  color: #000;  
+  border: none;  
+  padding: 10px 20px;  
+  cursor: pointer;  
+  transition: background-color 0.3s;  
+
+  &:hover {  
+    background-color: darken(#ffcc00, 10%);  
+  }  
+}

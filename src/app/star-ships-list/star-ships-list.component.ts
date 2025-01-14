@@ -23,16 +23,17 @@ export class StarShipsListComponent implements OnInit {
 
   loadStarships(): void { 
     this.apiStarshipsService.getData().subscribe((data: any) => {
-      this.starships= data.results; 
+      this.starships= [...this.starships, ...data.results]; 
     });
     
-    // loadMore() { 
-    //   this.currentPage++; 
-    //   this.apiStarshipsService.getData(this.currentPage).subscribe(response => { 
-    //     const newStarships = response.results.map((starship: any) => ({ 
-    //       name: starship.name, model: starship.model })); 
-    //       this.starships = [...this.starships, ...newStarships]; }); }
+  }
+
+  viewMore(): void {  
+    this.currentPage++;  
+    this.loadStarships();  
+  }  
     
    }
 
-  }
+
+

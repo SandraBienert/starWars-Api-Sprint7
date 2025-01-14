@@ -13,8 +13,8 @@ import {starship } from '../interfaces/starship.interface';
 })
 
 export class StarshipDetailComponent implements OnInit {
-  starship: any;
-  @Input() Starship: any;
+
+  @Input() starship: any;
   
   constructor( private route: ActivatedRoute, private apiStarshipsService: ApiStarshipsService) { }
 
@@ -24,5 +24,9 @@ export class StarshipDetailComponent implements OnInit {
       this.starship = data; 
     });
   }
+
+  goBack() {
+    window.history.back();
+    }
 
 }
