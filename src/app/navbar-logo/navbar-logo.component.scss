@@ -1,13 +1,22 @@
 
- .container-fluid{
-  background-color: #000;  
-   color: #fff;  
-    font-family: 'Star Jedi', cursive;
- }
+*{
+    background-color: #000;  
+    color: #fff;  
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
 
+  
 a{
     color: white;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 20px;
+    background-color: #000;
 }
 
+div#login-container.login-container{
+   padding-left: 300px;
+  }
+ 

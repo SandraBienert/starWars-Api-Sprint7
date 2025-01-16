@@ -1,23 +1,18 @@
-.container-fluid {
-    height: 50x;
-    background-color: #000;  
-    color: #fff;  
-    font-family: 'Star Jedi', cursive;
-}
 
-.nav.nav-tabs {
-    background-color: #000;
-    color: white;
-    
-}
+.container-fluid {
+  height: 70px;
+  background-color: black; 
+  color: white; 
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+  font-size: 22px;
+} 
 
 a.nav-link.active,
  a.nav-link.disabled { 
-  color: white
-}
-
-.lineaSeparacion{
-  height: 5px;
   color: white;
-
 }
+
+a.nav-link {
+  color: #fff;
+}
+

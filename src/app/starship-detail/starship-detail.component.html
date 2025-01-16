@@ -2,25 +2,26 @@
   <div class="row">
     <div class="col-md-12">
       <h2>Starship Detail</h2>
-      <div *ngIf="starship">
-        <h3>{{ starship.name }}</h3>
-        <p><strong>Model:</strong> {{ starship.model }}</p>
-        <p><strong>Model:</strong> {{ starship.model }}</p>
-        <p><strong>Model:</strong> {{ starship.model }}</p>
-        <p><strong>Model:</strong> {{ starship.model }}</p>
-        <p><strong>Model:</strong> {{ starship.model }}</p>
+      <div *ngIf="starship ; else loading">
+        <h2>{{starship.name}}</h2>  
+        <p><strong>Model:</strong> {{starship.model}}</p>  
+        <p><strong>Manufacturer:</strong> {{starship.manufacturer}}</p>  
+        <p><strong>Passengers:</strong> {{starship.passengers}}</p>  
+        <p><strong>Cargo capacity:</strong> {{starship.starship_class}}</p>   
+        <p><strong>Pilots:</strong> {{starship.pilots.join(',')}}</p>   
       </div>
+      <ng-template #loading>  
+        <p>Loading starship details...</p>  
+      </ng-template>   
     </div>
   </div>
-  <div class="row">
+  <div class="row mt-3">
     <div class="col-md-12">
       <button class="btn btn-primary" (click)="goBack()">Back</button>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-12">
-      <app-starship-detail [starship]="starship"></app-starship-detail>
-    </div>
-  </div>
+</div>
+
+
 
 
